@@ -505,7 +505,7 @@ body{
 }
 
 @media(max-width:580px){
-    .music-player{
+    .music-player>.album.progress-bar.player-bar{
         display: none;
     }
 }
