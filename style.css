@@ -350,12 +350,6 @@ body{
     opacity: 0.4;
 }
 
-@media(max-width:580px){
-    .music-player{
-        display: none;
-    }
-}
-
 .music-player{
     display: flex;
     position: fixed;
@@ -508,4 +502,10 @@ body{
     background: #a9a9a9a4;
     cursor: grab; 
     transition: 0.2s;
+}
+
+@media(max-width:580px){
+    .music-player{
+        display: none;
+    }
 }
