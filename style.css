@@ -350,6 +350,12 @@ body{
     opacity: 0.4;
 }
 
+@media(max-width:580px){
+    .music-player{
+        display: none;
+    }
+}
+
 .music-player{
     display: flex;
     position: fixed;
