@@ -21,7 +21,7 @@ body{
     height: 86vh;
 }
 
-@media(min-width:0px)and(max-width:320px){
+@media(max-width:580px){
     .sidebar{
         display: none;
     }
