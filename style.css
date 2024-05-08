@@ -21,6 +21,13 @@ body{
     height: 86vh;
 }
 
+@media(min-width:0px)and(max-width:320px){
+    .sidebar{
+        display: none;
+    }
+}
+
+
 .main-content{
     background-color: #121212;
     flex: 1;
