@@ -1,0 +1,498 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    background-color: black;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    background-color: black;
+    width: 280px;
+    border-radius: 0.6rem; /*1rem=16px*/
+    margin: 0 0.5rem 0.5rem 0rem;
+    height: 86vh;
+}
+
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    height: 85vh;
+    border-radius: 0.6rem;
+    overflow: auto;
+    padding: 0 0.6rem 0.6rem 0.6rem;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.nav-options a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    margin: 1.2rem;
+    line-height: 3rem;
+}
+
+.nav-options i{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    margin-left: 0.75rem;
+}
+
+.search{
+    opacity: 0.75;
+}
+
+.search:hover{
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 0.6rem;
+    height: 67.5vh;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 0rem 1rem;
+    font-weight: 600;
+}
+
+.lib-option a{
+    text-decoration: none;
+    color: white;
+}
+
+.lib-option img{
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-left: 0.5rem;
+}
+
+.lib-option{
+    opacity: 0.75;
+}
+
+.lib-option:hover{
+    opacity: 1;
+    transition: 0.1s;
+}
+
+.icons{
+    font-size: 0.5rem;
+}
+
+.plus{
+    opacity: 0.75;
+}
+
+.plus:hover{
+    opacity: 1;
+    /* background-color: #1f1f1f; */
+    border-radius: 50%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.arrow{
+    opacity: 0.75;
+}
+
+.arrow:hover{
+    opacity: 1;
+    /* background-color: #1f1f1f; */
+    border-radius: 50%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.box{
+    margin: 0.75rem 0.5rem;
+    padding: 0.10rem 1rem 0.8rem 1rem;
+    background-color: #242424;
+    border-radius: 0.6rem;
+}
+
+.box-p1{
+    font-weight: 600;
+    font-size: 0.7;
+    cursor: default;
+}
+.box-p2{
+    font-size: 0.9rem;
+    font-size: 0.6;
+    cursor: default;
+}
+
+.badge{
+    padding: 0.25rem 1rem;
+    border-radius: 6.25rem;
+    font-weight: 700;
+    font-size: 0.87rem;
+    color: black;
+    border: none;
+    background-color: white;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+
+.badge:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.b{
+    margin-top: 1.6rem;
+}
+
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    z-index: 5;
+}
+
+.sticky-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0 0.8rem 0.3rem;
+    /* background-color: #242424; */
+}
+
+.sticky-nav-for-back-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-nav-for-back-icons>img{
+    margin-right: 0.70rem;
+}
+.sticky-nav-for-back-icons>img:hover{
+    cursor: no-drop;
+}
+
+.sticky-nav-rem-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sticky-nav-rem-options button{
+    margin-right: 0.75rem;
+}
+
+.sticky-nav-rem-options-icons{
+    margin: 0.5rem 1.25rem 0 0;
+}
+
+.sticky-nav-rem-options-icons:hover{
+    cursor: pointer;
+}
+
+
+.sticky-nav-rem-options .dark-badge i{
+    margin-right: 0.5rem;
+}
+
+.sticky-nav-music{
+    padding: 0 1.2rem 1rem 0.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.sticky-nav-music button{
+    margin: 0 0 0 0.5rem;
+}
+
+.sticky-nav-music-button{
+    padding: 0.25rem 1rem;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 0.87rem;
+    border: none;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    background-color: #242424;
+    color: white;
+    opacity: 0.8;
+}
+.sticky-nav-music-button:hover{
+    opacity: 1;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.sticky-nav-music-button1{
+    padding: 0.25rem 1rem;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 0.87rem;
+    border: none;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    background-color: white;
+    color: black;
+}
+
+.sticky-nav-music-button1:hover{
+    cursor: pointer;
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.cards-pair{
+    margin-top: 2rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-heading{
+    display: inline;
+    margin: 1rem 0 1rem 0.6rem;
+    line-height: 4rem;
+}
+
+.card-heading:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card {
+    width: 189px;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+}
+
+.card:hover {
+    background-color: #2323238f ;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.card-img{
+    height: 70%;
+    width: 100%;
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px 6px #181818;
+}
+
+.title-card{
+    font-weight: 600;
+    margin: 0.5rem 0 0.2rem 0;
+}
+
+.description-card{
+    font-weight: 500;
+    font-size: 0.9rem;
+    opacity: 0.75;
+    margin: 0.6rem 0.2rem 0.2rem 0;
+    text-wrap: pretty;
+}
+
+.footer-line{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 0.2px solid white;
+    opacity: 0.4;
+}
+
+.music-player{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12.5vh;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.album{
+    /* background-color: rgba(128, 255, 0, 0.067); */
+    width: 25%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0.5rem;
+}
+.album-img{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 0.8rem;
+}
+.album-img>img{
+    height: inherit;
+    border-radius: 0.25rem;
+}
+.album-text>.title{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 0.6rem;
+}
+.album-text>.artist{
+    font-size: 0.7rem;
+    opacity: 0.7;
+    line-height: 0.1rem;
+}
+.album-text{
+    text-wrap: nowrap;
+    margin-right: 1rem;
+}
+.album-text>p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.album-icon{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.album-icon:hover{
+    opacity: 1;
+}
+
+
+.progress-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 0.5rem 0 0 0;
+}
+
+.progress-controls{
+    display: flex;
+    align-items: center;
+}
+.progress-controls>img{
+    height: 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    opacity: 0.7;
+}
+.progress-controls>img:hover{
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.player-bar{
+    display: flex;
+    align-items: center;
+}
+.player-bar>span{
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+    opacity: 0.7;
+    cursor: default;
+}
+.player-bar-track{
+    appearance: none;
+    width: 28rem;
+    background-color: #ddd;
+    border-radius: 6.25rem;
+    height: 0.25rem;
+}
+.player-bar-track::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.75rem;
+    width:0.75rem;
+    background-color: #1bd760;
+    cursor: pointer;
+    border-radius: 50%;
+}
+    
+.player-control{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player-control-options{
+    display: flex;
+    align-items: center;
+    padding-right: 0.9rem;
+}
+.player-control-options> i{
+    margin: 0.6rem;
+    font-size: 0.95rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.player-control-options> i:hover{
+    opacity: 1;
+    transition: 0.2s;
+}
+.player-control-options>.player-bar-track{
+    width: 6.25rem;
+}
+
+
+/* Scrollbar Modification */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #484848;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a9a9a9a4;
+    cursor: grab; 
+    transition: 0.2s;
+}
